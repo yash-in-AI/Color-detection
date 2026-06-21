@@ -1,55 +1,40 @@
-# 🎨 Color Detection Project
+# Color Detection Project
 
-A simple Python project that lets you open an image and click on any point to detect the color at that location.
+This project is a simple Python program that detects the color of a point in an image.
 
-## ✨ Features
+## What it does
+- Open an image
+- Let the user click on the image
+- Read the RGB values of that pixel
+- Match the color with a list of known colors
+- Show the result on the screen
 
-- Detects the clicked pixel color
-- Shows the closest matching color name and RGB values
-- Displays the result directly on the image window
-- Saves detected color details to [colors.csv](colors.csv)
+## Requirements
+Install these packages:
 
-## 🛠️ Requirements
-
-Install the required packages:
-
-```bash
 pip install opencv-python numpy pandas
-```
 
-## ▶️ How to Run
+## Run the program
+Use this command:
 
-Run the script from the project folder:
-
-```bash
 python color_detection.py --image your_image.jpg
-```
 
 Example:
 
-```bash
 python color_detection.py --image colorpic.jpg
-```
 
-## 🔍 How It Works
+## How it works
+1. Load the image.
+2. Click on the image.
+3. Read the pixel color.
+4. Compare it with the CSV data.
+5. Display the result.
 
-1. The program loads the image.
-2. It waits for a mouse click.
-3. It reads the RGB values of the clicked pixel.
-4. It matches those values with the color database in [colors.csv](colors.csv).
-5. It shows the result on the screen.
+## Files
+- color_detection.py
+- colors.csv
+- colorpic.jpg
 
-## 📁 Project Files
-
-- [color_detection.py](color_detection.py) — main script
-- [colors.csv](colors.csv) — color data used for matching
-- [colorpic.jpg](colorpic.jpg) — sample image for testing
-
-## ⌨️ Controls
-
-- Click on the image to detect a color
-- Press `Esc` to close the window
-
-## 💡 Note
-
-This project is a great way to learn basic image processing and color matching in Python.
+## Notes
+- Press Esc to close the window.
+- Click on the image to detect a color.
